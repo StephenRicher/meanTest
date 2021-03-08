@@ -1,3 +1,2 @@
-numpy 
-pymol
+numpy
 pytest
