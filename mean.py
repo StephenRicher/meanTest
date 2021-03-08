@@ -13,8 +13,8 @@ def mean(sample):
     """
     assert len(sample) != 0, 'Unable to take the mean of an empty list.'
     for value in sample:
-        if isinstance(value, complex):
-            return NotImplemented
+        #if isinstance(value, complex):
+        #    return NotImplemented
         assert isinstance(value, (int, float)), 'A value is not a number.'
 
     sample_mean = sum(sample) / len(sample)
