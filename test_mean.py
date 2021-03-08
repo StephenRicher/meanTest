@@ -1,4 +1,5 @@
 from mean import *
+from numpy.testing import assert_almost_equal
 
 def test_ints():
     num_list = [1, 2, 3, 4, 5]
@@ -17,13 +18,15 @@ def test_double():
     num_list=[1,2,3,4]
     obs = mean(num_list)
     exp = 2.5
-    assert obs == exp
+    assert_almost_equal(obs, exp)
+    #assert obs == exp
 
 def test_long():
     big = 1000000
     obs = mean(range(1,big))
     exp = big/2.0
-    assert obs == exp
+    assert_almost_equal(obs, exp)
+    #assert obs == exp
 
 def test_complex():
     # complex numbers are an unordered field
