@@ -15,7 +15,7 @@ def mean(sample):
     for value in sample:
         #if isinstance(value, complex):
         #    return NotImplemented
-        assert isinstance(value, (int, float)), f'{value} is not a number.'
+        assert isinstance(value, (int, float)), 'A value is not a number.'
 
     sample_mean = sum(sample) / len(sample)
     return sample_mean
